@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b9757d8d64.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Manrope Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Raw CSS -->
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .hero {
+            background-image: url(./assets/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .how-we-works {
+            background-image: url(./assets/bg2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .portfolio {
+            background-image: url(./assets/works-section.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+
+<!-- lg:h-screen -->
+<header class="fixed w-screen z-50 top-0 ">
+    <nav class="shadow-md ">
+        <div class="navbar bg-base-100 md:px-8 md:py-4 ">
+            <div class="navbar-start flex">
+                <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt=""></a>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="navbar-center hidden lg:flex  ">
+                <ul class="menu menu-horizontal px-1  text-xl space-x-6">
+                    <li class="hover:font-semibold "><a href="./index.html">Home</a></li>
+                    <li class="hover:font-semibold "><a href="#services">Services</a></li>
+                    <li class="hover:font-semibold "><a href="./team.html">Portfolio</a></li>
+                    <li class="hover:font-semibold "><a>Blogs</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end gap-3 text-lg">
+                <a class="hidden md:block items-center bg-[#ABEF5F] hover:bg-blue-200 px-5 py-2 rounded-3xl font-bold"
+                    href="./contact.html">Book Consult
+                    <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
+                        <!-- Mobile Menu -->
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Hero Section -->
+
+
+
+<!-- Our Team -->
+<section id="our-portfolio" class="py-12 portfolio ">
+    <!--Container -->
+    <div class="mt-4 md:mt-8 lg:mt-28">
+        <div class="space-y-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
+           
+                  
+            <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold text-[#808baf]">Our Team Members</h1>
+           
+        </div>
+    </div>
+
+    <!-- Card Grid -->
+
+    <div class="grid px-2 md:px-2 lg:px-0 md:grid-cols-2 lg:grid-cols-3 gap-20  container mx-auto mt-24">
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/moomtahina.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+        <!-- 1st -->
+        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
+                    src="./assets/fatema-cv-photo.png" alt=""></div>
+            <div class="mt-12  md:text-justify ">
+                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                <p class="font-semibold">Chairman,</p><br>
+                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
+                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
+                    been instrumental in shaping the company’s mission and guiding its growth. Her
+                    commitment to healthcare equity and her passion for leveraging technology to
+                    improve healthcare access make her a true pioneer in the industry.
+                    Expertise: Maternal and child health, healthcare policy, strategic leadership
+                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
+                    partnerships</p><br>
+                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                    href="./fatema.html">Portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<footer class="bg-black py-24 border">
+    <!-- Container -->
+    <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center space-y-8 ">
+
+        <a class="btn btn-ghost text-3xl font-bold text-white"> SHRL</a>
+        <p class="text-white text-center md:w-7/12">Explore our unique designs blending rustic charm with modern
+            sophistication. Contact us for a free consultation or to discuss your next project.
+        </p>
+        <div class="text-white">
+            <ul
+                class="menu menu-horizontal px-1  text-lg space-x-4 flex flex-col items-center justify-center lg:flex-row">
+                <li class="hover:font-semibold "><a>Home</a></li>
+                <li class="hover:font-semibold "><a>Services</a></li>
+                <li class="hover:font-semibold "><a>Portfolio</a></li>
+                <li class="hover:font-semibold "><a>Blogs</a></li>
+                <li class="hover:font-semibold "><a>Contact Us</a></li>
+            </ul>
+        </div>
+        <a class=" items-center bg-[#ABEF5F] px-5 py-2 rounded-3xl font-bold w-52 ">Book Consult
+            <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
+        <div class="dropdown">
+        </div>
+    </div>
+
+</footer>
+
+</html>
