@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHRL</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b9757d8d64.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Manrope Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+    <!-- Raw CSS -->
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .hero {
+            background-image: url(./assets/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .how-we-works {
+            background-image: url(./assets/bg2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .portfolio {
+            background-image: url(./assets/works-section.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- lg:h-screen -->
+    <header class="fixed w-screen z-50 top-0">
+        <nav class="shadow-md">
+            <div class="navbar bg-base-100 md:px-8 md:py-4">
+                <div class="navbar-start flex">
+                    <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt="" /></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl space-x-6">
+                        <li class="hover:font-semibold">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="hover:font-semibold">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="hover:font-semibold">
+                            <a href="./team.html">Portfolio</a>
+                        </li>
+                        <li class="hover:font-semibold"><a>Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end gap-3 text-lg">
+                    <a class="hidden md:block items-center bg-[#ABEF5F] hover:bg-blue-200 px-5 py-2 rounded-3xl font-bold"
+                        href="#contact">Book Consult
+                        <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <!-- Mobile Menu -->
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <!-- Our Key Services -->
+    <!--Container -->
+    <section id="services" class="py-2 md:py-8 lg:py-32 how-we-works mt-20">
+        <div>
+            <div class="space-y-2 px-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
+                <p class="bg-white rounded-full px-4 py-2 w-48 text-center">
+                    <i class="text-black fa-solid fa-arrow-right"></i> How we works
+                </p>
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                    Our Key Services
+                </h1>
+                <p class="md:w-8/12">
+                    we offer a comprehensive range of services designed to revolutionize
+                    healthcare for women and children. Our approach combines advanced
+                    technology, evidence-based practices, and a deep commitment to
+                    patient care.
+                </p>
+            </div>
+        </div>
+        <!-- Card Container -->
+        <div
+            class="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-8 lg:mt-24 lg:container mx-auto">
+            <!-- Card 1 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <img src="./assets/consultation.png" alt="" />
+                <h3 class="text-xl font-semibold">Online Consultation Platform</h3>
+                <p>
+                    BAN-GDM is Our flagship service, the online consultation platform,
+                    provides secure and private access to healthcare professionals from
+                    the comfort of your home. This user-friendly platform ensures that
+                    women and families can receive expert medical advice, consultations,
+                    and follow-up care without the need for physical visits, breaking
+                    down barriers to healthcare access.
+                </p>
+                <p class="font-semibold text-xl">Features</p>
+                <ul class="list-disc">
+                    <li>Secure, private consultations</li>
+                    <li>Accessible anytime, anywhere</li>
+                    <li>Expert advice on maternal and child health</li>
+                </ul>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-brands fa-researchgate text-4xl"></i><br />
+                <h3 class="text-xl font-semibold">Research and Analysis</h3>
+                <p>
+                    Our dedicated research team is at the forefront of maternal and
+                    child health research. By conducting ongoing studies in public
+                    health, clinical practices, and maternal care, we ensure that all of
+                    our services are backed by the latest evidence and cutting-edge
+                    medical advancements. Our research efforts also contribute to the
+                    global healthcare community, fostering knowledge and innovation.
+                </p>
+                <p class="font-semibold text-xl">Focus Areas:</p>
+                <ul class="list-disc">
+                    <li>Maternal and child health research</li>
+                    <li>Public health analysis</li>
+                    <li>Clinical trials and health outcomes research</li>
+                </ul>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-solid fa-notes-medical text-4xl"></i> <br />
+                <h3 class="text-xl font-semibold">
+                    Training Programs for Healthcare Professionals
+                </h3>
+                <p>
+                    We believe that well-trained healthcare professionals are the
+                    cornerstone of excellent patient care. Our specialized training
+                    programs focus on enhancing the skills and knowledge of healthcare
+                    providers in maternal and child health, equipping them with the
+                    latest techniques and insights to offer exceptional care.
+                </p>
+                <p class="font-semibold text-xl">Training Includes:</p>
+                <ul class="list-disc">
+                    <li>Workshops and seminars</li>
+                    <li>Advanced clinical training</li>
+                    <li>Digital healthcare management skills</li>
+                </ul>
+            </div>
+            <!-- card 4 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-solid fa-book-open-reader text-4xl"></i> <br />
+                <h3 class="text-xl font-semibold">Patient Education</h3>
+                <p>
+                    Empowering women and parents with the knowledge to make informed
+                    healthcare decisions is a core part of our mission. We provide a
+                    wide range of educational materials and resources to help
+                    individuals understand maternal and child health, nutrition, and
+                    preventive care, leading to healthier outcomes for families.
+                </p>
+                <p class="font-semibold text-xl">Resources Provided:</p>
+                <ul class="list-disc">
+                    <li>Guides on maternal and child healthcare</li>
+                    <li>Interactive educational tools</li>
+                    <li>Health tips and expert advice</li>
+                </ul>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-solid fa-people-group text-4xl"></i> <br />
+                <h3 class="text-xl font-semibold">Community Outreach</h3>
+                <p>
+                    Our commitment to healthcare extends beyond individual
+                    consultations. We are actively engaged in outreach programs designed
+                    to bring quality healthcare services to underserved and marginalized
+                    populations. By collaborating with NGOs and community organizations,
+                    we aim to ensure that every woman and child has access to the care
+                    they deserve.
+                </p>
+                <p class="font-semibold text-xl">Outreach Programs:</p>
+                <ul class="list-disc">
+                    <li>Healthcare access for underserved populations</li>
+                    <li>Health education workshops and clinics</li>
+                    <li>Support for local health initiatives</li>
+                </ul>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-brands fa-researchgate text-4xl"></i><br />
+                <h3 class="text-xl font-semibold">
+                    Research Publications and Academic Collaboration
+                </h3>
+                <p>
+                    As leaders in healthcare innovation, we regularly publish our
+                    research findings in esteemed academic journals. By collaborating
+                    with educational institutions and participating in global research
+                    initiatives, we contribute to the advancement of maternal and child
+                    healthcare on a global scale.
+                </p>
+                <p class="font-semibold text-xl">Academic Contributions:</p>
+                <ul class="list-disc">
+                    <li>Published research on maternal and child health</li>
+                    <li>Health education workshops and clinics</li>
+                    <li>Support for local health initiatives</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-24 text-center lg:w-6/12 mx-auto">
+            <p>
+                At Smart Healthcare and Research Ltd., each of our services is
+                designed with the goal of improving healthcare access, quality, and
+                outcomes for women and children. We are committed to continuous
+                innovation and compassionate care, ensuring that our clients receive
+                the best possible support on their healthcare journey.
+            </p>
+        </div>
+    </section>
+
+  
+   
+
+    
+
+    <footer class="bg-black py-24 border">
+        <!-- Container -->
+        <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center space-y-8">
+            <a href="./index.html"><img class="h-14 md:h-40" src="./assets/logo.png" alt="" /></a>
+
+            <div class="text-white">
+                <ul
+                    class="menu menu-horizontal px-1 text-lg space-x-4 flex flex-col items-center justify-center lg:flex-row">
+                    <li class="hover:font-semibold"><a>Home</a></li>
+                    <li class="hover:font-semibold"><a>Services</a></li>
+                    <li class="hover:font-semibold"><a>Portfolio</a></li>
+                    <li class="hover:font-semibold"><a>Blogs</a></li>
+                    <li class="hover:font-semibold"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div></div>
+
+            <p class="text-slate-50 text-xs text-center">
+                © 2024 Smart Healthcare and Research Ltd. | All rights reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
