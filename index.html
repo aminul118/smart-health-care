@@ -2,10 +2,10 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHRL</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -13,9 +13,9 @@
     <!-- Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Manrope Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
     <!-- Raw CSS -->
     <style>
@@ -44,473 +44,548 @@
 </head>
 
 <body>
-<!-- lg:h-screen -->
-<header class="fixed w-screen z-50 top-0 ">
-    <nav class="shadow-md ">
-        <div class="navbar bg-base-100 md:px-8 md:py-4 ">
-            <div class="navbar-start flex">
-                <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt=""></a>
+    <!-- lg:h-screen -->
+    <header class="fixed w-screen z-50 top-0">
+        <nav class="shadow-md">
+            <div class="navbar bg-base-100 md:px-8 md:py-4">
+                <div class="navbar-start flex">
+                    <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt="" /></a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl space-x-6">
+                        <li class="hover:font-semibold">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="hover:font-semibold">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="hover:font-semibold">
+                            <a href="./team.html">Portfolio</a>
+                        </li>
+                        <li class="hover:font-semibold"><a>Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end gap-3 text-lg">
+                    <a class="hidden md:block items-center bg-[#ABEF5F] hover:bg-blue-200 px-5 py-2 rounded-3xl font-bold"
+                        href="#contact">Book Consult
+                        <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            <!-- Mobile Menu -->
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- Desktop Menu -->
-            <div class="navbar-center hidden lg:flex  ">
-                <ul class="menu menu-horizontal px-1  text-xl space-x-6">
-                    <li class="hover:font-semibold "><a href="./index.html">Home</a></li>
-                    <li class="hover:font-semibold "><a href="#services">Services</a></li>
-                    <li class="hover:font-semibold "><a href="./team.html">Portfolio</a></li>
-                    <li class="hover:font-semibold "><a>Blogs</a></li>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="bg-slate-100 mt-24 py-6">
+        <div class="grid md:grid-cols-2 justify-between items-center gap-8">
+            <div class="mx-auto px-4 md:px-0 md:w-9/12 space-y-4">
+                <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl">
+                    <span class="text-[#808baf]">Welcome to </span><br />
+                    Smart Healthcare and Research Ltd.
+                </h1>
+                <p>
+                    we are dedicated to transforming healthcare delivery for women and
+                    children by combining innovation, compassion, and cutting-edge
+                    technology. With a mission to bridge the gap in healthcare
+                    accessibility, we have created a platform that brings expert medical
+                    care directly to families, regardless of their location or
+                    socio-economic status.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid md:grid-cols-2 gap-8 justify-center items-center text-slate-600">
+                    <!-- card1 -->
+                    <div class="text-center space-y-3 lg:mt-24">
+                        <i class="text-4xl fa-solid fa-list-check"></i>
+                        <h1 class="text-5xl md:text-7xl font-bold">50+</h1>
+                        <p class="font-semibold text-xl">Works Departments</p>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="text-center space-y-3 lg:mt-24">
+                        <i class="text-4xl fa-solid fa-users"></i>
+                        <h1 class="text-5xl md:text-7xl font-bold">8+</h1>
+                        <p class="font-semibold text-xl">Staff Members</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/hero-image.png" alt="" />
+        </div>
+    </section>
+
+    <!-- Our Key Services -->
+    <!--Container -->
+    <section id="services" class="py-2 md:py-8 lg:py-32 how-we-works">
+        <div>
+            <div class="space-y-2 px-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
+                <p class="bg-white rounded-full px-4 py-2 w-48 text-center">
+                    <i class="text-black fa-solid fa-arrow-right"></i> How we works
+                </p>
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                    Our Key Services
+                </h1>
+                <p class="md:w-8/12">
+                    we offer a comprehensive range of services designed to revolutionize
+                    healthcare for women and children. Our approach combines advanced
+                    technology, evidence-based practices, and a deep commitment to
+                    patient care.
+                </p>
+            </div>
+        </div>
+        <!-- Card Container -->
+        <div
+            class="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-8 lg:mt-24 lg:container mx-auto">
+            <!-- Card 1 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <img src="./assets/consultation.png" alt="" />
+                <h3 class="text-xl font-semibold">Online Consultation Platform</h3>
+                <p>
+                    BAN-GDM is Our flagship service, the online consultation platform,
+                    provides secure and private access to healthcare professionals from
+                    the comfort of your home. This user-friendly platform ensures that
+                    women and families can receive expert medical advice, consultations,
+                    and follow-up care without the need for physical visits, breaking
+                    down barriers to healthcare access.
+                </p>
+                <p class="font-semibold text-xl">Features</p>
+                <ul class="list-disc">
+                    <li>Secure, private consultations</li>
+                    <li>Accessible anytime, anywhere</li>
+                    <li>Expert advice on maternal and child health</li>
                 </ul>
             </div>
+            <!-- Card 2 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-brands fa-researchgate text-4xl"></i><br />
+                <h3 class="text-xl font-semibold">Research and Analysis</h3>
+                <p>
+                    Our dedicated research team is at the forefront of maternal and
+                    child health research. By conducting ongoing studies in public
+                    health, clinical practices, and maternal care, we ensure that all of
+                    our services are backed by the latest evidence and cutting-edge
+                    medical advancements. Our research efforts also contribute to the
+                    global healthcare community, fostering knowledge and innovation.
+                </p>
+                <p class="font-semibold text-xl">Focus Areas:</p>
+                <ul class="list-disc">
+                    <li>Maternal and child health research</li>
+                    <li>Public health analysis</li>
+                    <li>Clinical trials and health outcomes research</li>
+                </ul>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-solid fa-notes-medical text-4xl"></i> <br />
+                <h3 class="text-xl font-semibold">
+                    Training Programs for Healthcare Professionals
+                </h3>
+                <p>
+                    We believe that well-trained healthcare professionals are the
+                    cornerstone of excellent patient care. Our specialized training
+                    programs focus on enhancing the skills and knowledge of healthcare
+                    providers in maternal and child health, equipping them with the
+                    latest techniques and insights to offer exceptional care.
+                </p>
+                <p class="font-semibold text-xl">Training Includes:</p>
+                <ul class="list-disc">
+                    <li>Workshops and seminars</li>
+                    <li>Advanced clinical training</li>
+                    <li>Digital healthcare management skills</li>
+                </ul>
+            </div>
+            <!-- card 4 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-solid fa-book-open-reader text-4xl"></i> <br />
+                <h3 class="text-xl font-semibold">Patient Education</h3>
+                <p>
+                    Empowering women and parents with the knowledge to make informed
+                    healthcare decisions is a core part of our mission. We provide a
+                    wide range of educational materials and resources to help
+                    individuals understand maternal and child health, nutrition, and
+                    preventive care, leading to healthier outcomes for families.
+                </p>
+                <p class="font-semibold text-xl">Resources Provided:</p>
+                <ul class="list-disc">
+                    <li>Guides on maternal and child healthcare</li>
+                    <li>Interactive educational tools</li>
+                    <li>Health tips and expert advice</li>
+                </ul>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-solid fa-people-group text-4xl"></i> <br />
+                <h3 class="text-xl font-semibold">Community Outreach</h3>
+                <p>
+                    Our commitment to healthcare extends beyond individual
+                    consultations. We are actively engaged in outreach programs designed
+                    to bring quality healthcare services to underserved and marginalized
+                    populations. By collaborating with NGOs and community organizations,
+                    we aim to ensure that every woman and child has access to the care
+                    they deserve.
+                </p>
+                <p class="font-semibold text-xl">Outreach Programs:</p>
+                <ul class="list-disc">
+                    <li>Healthcare access for underserved populations</li>
+                    <li>Health education workshops and clinics</li>
+                    <li>Support for local health initiatives</li>
+                </ul>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+                <i class="fa-brands fa-researchgate text-4xl"></i><br />
+                <h3 class="text-xl font-semibold">
+                    Research Publications and Academic Collaboration
+                </h3>
+                <p>
+                    As leaders in healthcare innovation, we regularly publish our
+                    research findings in esteemed academic journals. By collaborating
+                    with educational institutions and participating in global research
+                    initiatives, we contribute to the advancement of maternal and child
+                    healthcare on a global scale.
+                </p>
+                <p class="font-semibold text-xl">Academic Contributions:</p>
+                <ul class="list-disc">
+                    <li>Published research on maternal and child health</li>
+                    <li>Health education workshops and clinics</li>
+                    <li>Support for local health initiatives</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-24 text-center lg:w-6/12 mx-auto">
+            <p>
+                At Smart Healthcare and Research Ltd., each of our services is
+                designed with the goal of improving healthcare access, quality, and
+                outcomes for women and children. We are committed to continuous
+                innovation and compassionate care, ensuring that our clients receive
+                the best possible support on their healthcare journey.
+            </p>
+        </div>
+    </section>
 
-            <div class="navbar-end gap-3 text-lg">
-                <a class="hidden md:block items-center bg-[#ABEF5F] hover:bg-blue-200 px-5 py-2 rounded-3xl font-bold"
-                    href="#contact">Book Consult
-                    <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+    <!-- Our Team -->
+    <section id="our-portfolio" class="py-12 portfolio">
+        <!--Container -->
+        <div class="mt-4 md:mt-8 lg:mt-24">
+            <div class="space-y-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
+                <p class="bg-green-200 rounded-full px-4 py-2 w-64 text-center">
+                    <i class="text-black fa-solid fa-arrow-right"></i> Our Team
+                </p>
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                    Our Latest Portfolio
+                </h1>
+                <p class="md:w-8/12 px-4">
+                    At Smart Healthcare and Research Ltd., our team is the driving force
+                    behind our mission to revolutionize healthcare for women and
+                    children. Our success is built on the passion, expertise, and
+                    dedication of healthcare professionals, researchers, and innovators
+                    who share a common goal—making healthcare accessible, compassionate,
+                    and impactful. Meet the people who are making a difference every
+                    day.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card Grid -->
+
+        <div class="grid px-2 md:px-2 lg:px-0 md:grid-cols-2 lg:grid-cols-3 gap-20 container mx-auto mt-24">
+            <!-- 1st -->
+            <div class="bg-slate-100 hover:bg-[#E7C1D3] rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+                <div class="absolute -top-14 -left-1">
+                    <img class="rounded-full border-4 border-red-400 w-28" src="./assets/fatema-cv-photo.png" alt="" />
+                </div>
+                <div class="mt-12 md:text-justify">
+                    <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                    <p class="font-semibold">Chairman,</p>
+                    <br />
+                    <p>
+                        Prof. Fatema Ashraf is the visionary leader behind Smart
+                        Healthcare and Research Ltd. With decades of experience in
+                        maternal and child healthcare, Prof. Ashraf has been instrumental
+                        in shaping the company’s mission and guiding its growth. Her
+                        commitment to healthcare equity and her passion for leveraging
+                        technology to improve healthcare access make her a true pioneer in
+                        the industry. Expertise: Maternal and child health, healthcare
+                        policy, strategic leadership Key Contributions: Visionary
+                        leadership, healthcare innovation, and strategic partnerships
+                    </p>
+                    <br />
+                    <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                        href="./fatema.html">Portfolio</a>
+                </div>
+            </div>
+            <!-- 1st -->
+            <div class="bg-slate-100 hover:bg-[#E7C1D3] rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+                <div class="absolute -top-14 -left-1">
+                    <img class="rounded-full border-4 border-red-400 w-28" src="./assets/moomtahina.png" alt="" />
+                </div>
+                <div class="mt-12 md:text-justify">
+                    <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                    <p class="font-semibold">Chairman,</p>
+                    <br />
+                    <p>
+                        Prof. Fatema Ashraf is the visionary leader behind Smart
+                        Healthcare and Research Ltd. With decades of experience in
+                        maternal and child healthcare, Prof. Ashraf has been instrumental
+                        in shaping the company’s mission and guiding its growth. Her
+                        commitment to healthcare equity and her passion for leveraging
+                        technology to improve healthcare access make her a true pioneer in
+                        the industry. Expertise: Maternal and child health, healthcare
+                        policy, strategic leadership Key Contributions: Visionary
+                        leadership, healthcare innovation, and strategic partnerships
+                    </p>
+                    <br />
+                    <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                        href="./fatema.html">Portfolio</a>
+                </div>
+            </div>
+            <!-- 1st -->
+            <div class="bg-slate-100 hover:bg-[#E7C1D3] rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
+                <div class="absolute -top-14 -left-1">
+                    <img class="rounded-full border-4 border-red-400 w-28" src="./assets/fatema-cv-photo.png" alt="" />
+                </div>
+                <div class="mt-12 md:text-justify">
+                    <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
+                    <p class="font-semibold">Chairman,</p>
+                    <br />
+                    <p>
+                        Prof. Fatema Ashraf is the visionary leader behind Smart
+                        Healthcare and Research Ltd. With decades of experience in
+                        maternal and child healthcare, Prof. Ashraf has been instrumental
+                        in shaping the company’s mission and guiding its growth. Her
+                        commitment to healthcare equity and her passion for leveraging
+                        technology to improve healthcare access make her a true pioneer in
+                        the industry. Expertise: Maternal and child health, healthcare
+                        policy, strategic leadership Key Contributions: Visionary
+                        leadership, healthcare innovation, and strategic partnerships
+                    </p>
+                    <br />
+                    <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+                        href="./fatema.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="w-64 mx-auto mt-8 flex justify-center bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
+            href="./team.html">More Details About Team</a>
+    </section>
+
+    <!-- why choose us -->
+    <section class="px-4 md:w-11/12 lg:w-8/12 mx-auto mt-4 md:mt-8 lg:mt-24 lg:mb-24">
+        <!--Container -->
+        <div class="mt-4 md:mt-8 lg:mt-24">
+            <div class="space-y-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto mb-4 md:mb-8">
+                <p class="bg-green-200 rounded-full px-4 py-2 w-64 text-center">
+                    <i class="text-black fa-solid fa-arrow-right"></i> why choose us
+                </p>
+                <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                    Our Commitments
+                </h1>
+                <p class="px-4">
+                    At Smart Healthcare and Research Ltd., we are not just healthcare
+                    providers—we are your dedicated partners in maternal and child
+                    health. Our focus on excellence, innovation, and compassion sets us
+                    apart in the healthcare sector. Here’s why you should trust us with
+                    your healthcare needs:
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-8">
+            <!-- left -->
+
+            <!-- card1 -->
+            <div class="flex gap-4 items-center bg-green-200 p-4 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-center justify-center md:flex-row gap-4">
+                    <i class="fa-solid fa-person-breastfeeding text-6xl"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold">
+                            Specialized Focus on Women and Children
+                        </h3>
+                        <br />
+                        <h3 class="font-semibold">Key Strengths:</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Tailored healthcare solutions for women and children</li>
+                            <li>Expert care for maternal and child health issues</li>
+                            <li>Compassionate, patient-centered approach</li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
-                        <!-- Mobile Menu -->
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
                 </div>
+            </div>
+            <!-- card2 -->
+            <div class="flex gap-4 items-center bg-green-200 p-4 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-center justify-center md:flex-row gap-4">
+                    <i class="fa-solid fa-notes-medical text-6xl"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold">Evidence-Based Healthcare</h3>
+                        <br />
+                        <h3 class="font-semibold">Evidence-Based Approach:</h3>
+                        <ul class="list-disc list-inside">
+                            <li>
+                                Services built on scientific research and clinical evidence
+                            </li>
+                            <li>
+                                Continuous updates to stay in line with healthcare
+                                advancements
+                            </li>
+                            <li>Commitment to high-quality, reliable care</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <!-- card3 -->
+            <div class="flex gap-4 items-center bg-green-200 p-4 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-center justify-center md:flex-row gap-4">
+                    <i class="fa-solid fa-earth-europe text-6xl"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold">
+                            Global Expertise, Local Understanding
+                        </h3>
+                        <br />
+                        <h3 class="font-semibold">Global & Local Impact:</h3>
+                        <ul class="list-disc list-inside">
+                            <li>International standards of healthcare delivery</li>
+                            <li>Customized solutions for local needs and challenges</li>
+                            <li>Global partnerships with local impact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="flex gap-4 items-center bg-green-200 p-4 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-center justify-center md:flex-row gap-4">
+                    <i class="fa-solid fa-toolbox text-6xl"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold">
+                            Comprehensive Health Tracking Tools
+                        </h3>
+                        <br />
+                        <h3 class="font-semibold">Health Tools:</h3>
+                        <ul class="list-disc list-inside">
+                            <li>
+                                Mobile apps for tracking maternal and child health milestones
+                            </li>
+                            <li>Personalized health insights and recommendations</li>
+                            <li>
+                                User-friendly interface for seamless healthcare management
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- card5 -->
+            <div class="flex gap-4 items-center bg-green-200 p-4 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-center justify-center md:flex-row gap-4">
+                    <i class="fa-solid fa-file-shield text-6xl"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold">
+                            Commitment to Privacy and Security
+                        </h3>
+                        <br />
+                        <h3 class="font-semibold">Security Features:</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Advanced data protection and encryption</li>
+                            <li>Strict privacy policies for consultations and records</li>
+                            <li>Secure platforms for telemedicine and health tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- card6 -->
+            <div class="flex gap-4 items-center bg-green-200 p-4 rounded-3xl shadow-lg">
+                <div class="flex flex-col items-center justify-center md:flex-row gap-4">
+                    <i class="fa-solid fa-book text-6xl"></i>
+                    <div>
+                        <h3 class="text-2xl font-semibold">
+                            Continuous Learning and Adaptation
+                        </h3>
+                        <br />
+                        <h3 class="font-semibold">Innovation & Growth:</h3>
+                        <ul class="list-disc list-inside">
+                            <li>Ongoing research to stay ahead of healthcare trends</li>
+                            <li>Investment in new technologies and methodologies</li>
+                            <li>Adaptation to the evolving needs of healthcare</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-<!-- Hero Section -->
-<section class="bg-slate-100 mt-24  py-6 ">
-    <div class="grid md:grid-cols-2 justify-between items-center gap-8">
-        <div class="mx-auto px-4 md:px-0 md:w-9/12 space-y-4 ">
-            <h1 class="font-bold text-3xl md:text-5xl lg:text-6xl "> <span class="text-[#808baf]">Welcome to </span><br>
-                Smart Healthcare and Research Ltd.</h1>
-            <p>we are dedicated to transforming
-                healthcare delivery for women and children by combining innovation, compassion,
-                and cutting-edge technology. With a mission to bridge the gap in healthcare
-                accessibility, we have created a platform that brings expert medical care directly to
-                families, regardless of their location or socio-economic status.
+    </section>
+
+    <!-- Let’s Discuss Next Project section -->
+    <section id="contact" class="hero py-24 px-4">
+        <div class="md:mt-4 md:mb-4 lg:w-8/12 mx-auto">
+            <div class="mt-4 md:mt-16 flex flex-col items-center justify-center md:w-7/12 mx-auto text-center gap-4">
+                <p class="bg-green-200 rounded-full px-4 py-2 w-64 text-center">
+                    <i class="text-black fa-solid fa-arrow-right"></i> Let’s Connect
+                </p>
+                <h3 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                    Let’s Discuss Next Project
+                </h3>
+                <p>
+                    We’re excited to explore new possibilities with you! Let’s discuss
+                    how we can combine rustic charm and modern design to create a
+                    stunning and unique space tailored to your vision.
+                </p>
+            </div>
+            <div class="mt-20 grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-4 mb-32">
+                <input class="px-12 py-3 rounded-full" type="text" placeholder="First Name*" />
+                <input class="px-12 py-3 rounded-full" type="text" placeholder="Last Name*" />
+                <input class="px-12 py-3 rounded-full" type="text" placeholder="Phone Number*" />
+                <input class="px-12 py-3 rounded-full" type="text" placeholder="Email*" />
+                <textarea name="" class="md:col-span-2 px-12 py-3 rounded-2xl h-64"
+                    placeholder="Write your message here"></textarea>
+
+                <button
+                    class="bg-[#ABEF5F80] px-5 py-2 border border-slate-300 rounded-full font-semibold md:col-span-2">
+                    Send Mail
+                    <i class="ml-4 -rotate-45 bg-[#ABEF5F] p-2 rounded-full text-black fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-24 border">
+        <!-- Container -->
+        <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center space-y-8">
+            <a href="./index.html"><img class="h-14 md:h-40" src="./assets/logo.png" alt="" /></a>
+
+            <div class="text-white">
+                <ul
+                    class="menu menu-horizontal px-1 text-lg space-x-4 flex flex-col items-center justify-center lg:flex-row">
+                    <li class="hover:font-semibold"><a>Home</a></li>
+                    <li class="hover:font-semibold"><a>Services</a></li>
+                    <li class="hover:font-semibold"><a>Portfolio</a></li>
+                    <li class="hover:font-semibold"><a>Blogs</a></li>
+                    <li class="hover:font-semibold"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div></div>
+
+            <p class="text-slate-50 text-xs">
+                © 2024 Smart Healthcare and Research Ltd. | All rights reserved
             </p>
-
-            <!-- Stats -->
-            <div class="grid  md:grid-cols-2 gap-8 justify-center items-center  text-slate-600 ">
-                <!-- card1 -->
-                <div class="text-center space-y-3 lg:mt-24">
-                    <i class="text-4xl fa-solid fa-list-check"></i>
-                    <h1 class="text-5xl md:text-7xl font-bold ">50+</h1>
-                    <p class="font-semibold text-xl">Works Departments</p>
-                </div>
-
-                <!-- card2 -->
-                <div class="text-center space-y-3 lg:mt-24">
-                    <i class="text-4xl fa-solid fa-users"></i>
-                    <h1 class="text-5xl md:text-7xl font-bold ">8+</h1>
-                    <p class="font-semibold text-xl">Staff Members</p>
-                </div>
-            </div>
         </div>
-        <img src="./assets/hero-image.png" alt="">
-    </div>
-
-</section>
-
-
-<!-- Our Key Services -->
-<!--Container -->
-<section id="services" class="py-2 md:py-8 lg:py-32 how-we-works">
-    <div>
-        <div class="space-y-2 px-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
-            <p class="bg-white rounded-full px-4 py-2 w-48 text-center "><i
-                    class="text-black fa-solid fa-arrow-right  "></i> How we works</p>
-            <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold ">Our Key Services</h1>
-            <p class="md:w-8/12 ">we offer a comprehensive range of
-                services designed to revolutionize healthcare for women and children. Our
-                approach combines advanced technology, evidence-based practices, and a deep
-                commitment to patient care.
-            </p>
-        </div>
-    </div>
-    <!-- Card Container -->
-    <div
-        class="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-8 lg:mt-24 lg:container mx-auto ">
-        <!-- Card 1 -->
-        <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
-            <img src="./assets/consultation.png" alt="">
-            <h3 class="text-xl font-semibold">Online Consultation Platform</h3>
-            <p>BAN-GDM is Our flagship service, the online consultation platform, provides
-                secure and private access to healthcare professionals from the comfort of your
-                home. This user-friendly platform ensures that women and families can receive
-                expert medical advice, consultations, and follow-up care without the need for
-                physical visits, breaking down barriers to healthcare access.</p>
-            <p class="font-semibold text-xl">Features</p>
-            <ul class="list-disc ">
-                <li> Secure, private consultations </li>
-                <li>Accessible anytime, anywhere</li>
-                <li>Expert advice on maternal and child health</li>
-            </ul>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
-            <i class="fa-brands fa-researchgate text-4xl"></i><br>
-            <h3 class="text-xl font-semibold">Research and Analysis</h3>
-            <p>Our dedicated research team is at the forefront of maternal and child health
-                research. By conducting ongoing studies in public health, clinical practices, and
-                maternal care, we ensure that all of our services are backed by the latest evidence
-                and cutting-edge medical advancements. Our research efforts also contribute to the
-                global healthcare community, fostering knowledge and innovation.</p>
-            <p class="font-semibold text-xl">Focus Areas:</p>
-            <ul class="list-disc ">
-                <li> Maternal and child health research </li>
-                <li>Public health analysis</li>
-                <li>Clinical trials and health outcomes research</li>
-            </ul>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
-            <i class="fa-solid fa-notes-medical text-4xl"></i> <br>
-            <h3 class="text-xl font-semibold">Training Programs for Healthcare Professionals</h3>
-            <p>We believe that well-trained healthcare professionals are the cornerstone of
-                excellent patient care. Our specialized training programs focus on enhancing the
-                skills and knowledge of healthcare providers in maternal and child health,
-                equipping them with the latest techniques and insights to offer exceptional care.</p>
-            <p class="font-semibold text-xl">Training Includes:</p>
-            <ul class="list-disc ">
-                <li> Workshops and seminars </li>
-                <li>Advanced clinical training</li>
-                <li>Digital healthcare management skills</li>
-            </ul>
-        </div>
-        <!-- card 4 -->
-        <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
-            <i class="fa-solid fa-book-open-reader text-4xl"></i> <br>
-            <h3 class="text-xl font-semibold">Patient Education</h3>
-            <p>Empowering women and parents with the knowledge to make informed healthcare
-                decisions is a core part of our mission. We provide a wide range of educational
-                materials and resources to help individuals understand maternal and child health,
-                nutrition, and preventive care, leading to healthier outcomes for families.</p>
-            <p class="font-semibold text-xl">Resources Provided:</p>
-            <ul class="list-disc ">
-                <li>Guides on maternal and child healthcare</li>
-                <li>Interactive educational tools</li>
-                <li>Health tips and expert advice</li>
-            </ul>
-        </div>
-        <!-- Card 5 -->
-        <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
-            <i class="fa-solid fa-people-group text-4xl"></i> <br>
-            <h3 class="text-xl font-semibold">Community Outreach</h3>
-            <p>Our commitment to healthcare extends beyond individual consultations. We are
-                actively engaged in outreach programs designed to bring quality healthcare
-                services to underserved and marginalized populations. By collaborating with
-                NGOs and community organizations, we aim to ensure that every woman and child
-                has access to the care they deserve.</p>
-            <p class="font-semibold text-xl">Outreach Programs:</p>
-            <ul class="list-disc ">
-                <li>Healthcare access for underserved populations</li>
-                <li>Health education workshops and clinics</li>
-                <li>Support for local health initiatives</li>
-            </ul>
-        </div>
-        <!-- Card 6 -->
-        <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
-            <i class="fa-brands fa-researchgate text-4xl"></i><br>
-            <h3 class="text-xl font-semibold">Research Publications and Academic Collaboration</h3>
-            <p>As leaders in healthcare innovation, we regularly publish our research findings in
-                esteemed academic journals. By collaborating with educational institutions and
-                participating in global research initiatives, we contribute to the advancement of
-                maternal and child healthcare on a global scale.</p>
-            <p class="font-semibold text-xl">Academic Contributions:</p>
-            <ul class="list-disc ">
-                <li>Published research on maternal and child health</li>
-                <li>Health education workshops and clinics</li>
-                <li>Support for local health initiatives</li>
-            </ul>
-        </div>
-
-    </div>
-    <div class="mt-24 text-center lg:w-6/12 mx-auto">
-        <p>At Smart Healthcare and Research Ltd., each of our services is designed with the
-            goal of improving healthcare access, quality, and outcomes for women and
-            children. We are committed to continuous innovation and compassionate care,
-            ensuring that our clients receive the best possible support on their healthcare
-            journey.</p>
-    </div>
-
-</section>
-
-
-
-<!-- Our Team -->
-<section id="our-portfolio" class="py-12 portfolio ">
-    <!--Container -->
-    <div class="mt-4 md:mt-8 lg:mt-24">
-        <div class="space-y-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
-            <p class="bg-green-200 rounded-full px-4 py-2 w-64 text-center"><i
-                    class="text-black fa-solid fa-arrow-right "></i> Our Team</p>
-            <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">Our Latest Portfolio</h1>
-            <p class="md:w-8/12 px-4">At Smart Healthcare and Research Ltd., our team is the driving force behind
-                our
-                mission to revolutionize healthcare for women and children. Our success is built on
-                the passion, expertise, and dedication of healthcare professionals, researchers, and
-                innovators who share a common goal—making healthcare accessible,
-                compassionate, and impactful. Meet the people who are making a difference every
-                day.</p>
-        </div>
-    </div>
-
-    <!-- Card Grid -->
-
-    <div class="grid px-2 md:px-2 lg:px-0 md:grid-cols-2 lg:grid-cols-3 gap-20  container mx-auto mt-24">
-        <!-- 1st -->
-        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
-            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
-                    src="./assets/fatema-cv-photo.png" alt=""></div>
-            <div class="mt-12  md:text-justify ">
-                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
-                <p class="font-semibold">Chairman,</p><br>
-                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
-                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
-                    been instrumental in shaping the company’s mission and guiding its growth. Her
-                    commitment to healthcare equity and her passion for leveraging technology to
-                    improve healthcare access make her a true pioneer in the industry.
-                    Expertise: Maternal and child health, healthcare policy, strategic leadership
-                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
-                    partnerships</p><br>
-                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
-                    href="./fatema.html">Portfolio</a>
-            </div>
-        </div>
-        <!-- 1st -->
-        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
-            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
-                    src="./assets/moomtahina.png" alt=""></div>
-            <div class="mt-12  md:text-justify ">
-                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
-                <p class="font-semibold">Chairman,</p><br>
-                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
-                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
-                    been instrumental in shaping the company’s mission and guiding its growth. Her
-                    commitment to healthcare equity and her passion for leveraging technology to
-                    improve healthcare access make her a true pioneer in the industry.
-                    Expertise: Maternal and child health, healthcare policy, strategic leadership
-                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
-                    partnerships</p><br>
-                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
-                    href="./fatema.html">Portfolio</a>
-            </div>
-        </div>
-        <!-- 1st -->
-        <div class="bg-slate-100 hover:bg-[#E7C1D3]  rounded-xl px-3 py-6 lg:p-8 relative flex items-center">
-            <div class="absolute -top-14 -left-1 "><img class="rounded-full border-4 border-red-400 w-28"
-                    src="./assets/fatema-cv-photo.png" alt=""></div>
-            <div class="mt-12  md:text-justify ">
-                <h1 class="text-2xl font-bold">Prof. Fatema Ashraf</h1>
-                <p class="font-semibold">Chairman,</p><br>
-                <p>Prof. Fatema Ashraf is the visionary leader behind Smart Healthcare and Research
-                    Ltd. With decades of experience in maternal and child healthcare, Prof. Ashraf has
-                    been instrumental in shaping the company’s mission and guiding its growth. Her
-                    commitment to healthcare equity and her passion for leveraging technology to
-                    improve healthcare access make her a true pioneer in the industry.
-                    Expertise: Maternal and child health, healthcare policy, strategic leadership
-                    Key Contributions: Visionary leadership, healthcare innovation, and strategic
-                    partnerships</p><br>
-                <a class="bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold"
-                    href="./fatema.html">Portfolio</a>
-            </div>
-        </div>
-       
-      
-        
-    </div>
-    
-    <a class="w-64 mx-auto mt-8 flex justify-center bg-green-200 hover:bg-blue-400 hover:text-white rounded-full px-6 py-2 font-semibold " href="./team.html">More Details About Team</a>
-    
-</section>
-
-
-<!-- why choose us -->
-<section class="px-4 md:w-11/12 lg:w-8/12 mx-auto mt-4 md:mt-8 lg:mt-24 lg:mb-24">
-    <!--Container -->
-    <div class="mt-4 md:mt-8 lg:mt-24">
-        <div class="space-y-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto mb-4 md:mb-8">
-            <p class="bg-green-200 rounded-full px-4 py-2 w-64 text-center"><i
-                    class="text-black fa-solid fa-arrow-right "></i> why choose us</p>
-            <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">Our Commitments</h1>
-            <p class="px-4">At Smart Healthcare and Research Ltd., we are not just healthcare providers—we
-                are your dedicated partners in maternal and child health. Our focus on excellence,
-                innovation, and compassion sets us apart in the healthcare sector. Here’s why you
-                should trust us with your healthcare needs:</p>
-        </div>
-    </div>
-
-
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-8">
-        <!-- left -->
-
-        <!-- card1 -->
-        <div class="flex gap-4 items-center  bg-green-200 p-4 rounded-3xl  shadow-lg ">
-            <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <i class="fa-solid fa-person-breastfeeding text-6xl "></i>
-                <div>
-                    <h3 class="text-2xl font-semibold">Specialized Focus on Women and Children</h3><br>
-                    <h3 class="font-semibold">Key Strengths:</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Tailored healthcare solutions for women and children</li>
-                        <li>Expert care for maternal and child health issues</li>
-                        <li>Compassionate, patient-centered approach</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- card2 -->
-        <div class="flex gap-4 items-center  bg-green-200 p-4 rounded-3xl  shadow-lg ">
-            <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <i class="fa-solid fa-notes-medical text-6xl "></i>
-                <div>
-                    <h3 class="text-2xl font-semibold">Evidence-Based Healthcare</h3><br>
-                    <h3 class="font-semibold">Evidence-Based Approach:</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Services built on scientific research and clinical evidence</li>
-                        <li>Continuous updates to stay in line with healthcare advancements</li>
-                        <li>Commitment to high-quality, reliable care</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- card3 -->
-        <div class="flex gap-4 items-center  bg-green-200 p-4 rounded-3xl  shadow-lg ">
-            <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <i class="fa-solid fa-earth-europe text-6xl "></i>
-                <div>
-                    <h3 class="text-2xl font-semibold">Global Expertise, Local Understanding</h3><br>
-                    <h3 class="font-semibold">Global & Local Impact:</h3>
-                    <ul class="list-disc list-inside">
-                        <li>International standards of healthcare delivery</li>
-                        <li>Customized solutions for local needs and challenges</li>
-                        <li>Global partnerships with local impact</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- card4 -->
-        <div class="flex gap-4 items-center  bg-green-200 p-4 rounded-3xl  shadow-lg ">
-            <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <i class="fa-solid fa-toolbox text-6xl "></i>
-                <div>
-                    <h3 class="text-2xl font-semibold">Comprehensive Health Tracking Tools</h3><br>
-                    <h3 class="font-semibold">Health Tools:</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Mobile apps for tracking maternal and child health milestones</li>
-                        <li>Personalized health insights and recommendations</li>
-                        <li>User-friendly interface for seamless healthcare management</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- card5 -->
-        <div class="flex gap-4 items-center  bg-green-200 p-4 rounded-3xl  shadow-lg ">
-            <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <i class="fa-solid fa-file-shield text-6xl "></i>
-                <div>
-                    <h3 class="text-2xl font-semibold">Commitment to Privacy and Security</h3><br>
-                    <h3 class="font-semibold">Security Features:</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Advanced data protection and encryption</li>
-                        <li>Strict privacy policies for consultations and records</li>
-                        <li>Secure platforms for telemedicine and health tracking</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- card6 -->
-        <div class="flex gap-4 items-center  bg-green-200 p-4 rounded-3xl  shadow-lg ">
-            <div class="flex flex-col items-center justify-center md:flex-row gap-4">
-                <i class="fa-solid fa-book text-6xl "></i>
-                <div>
-                    <h3 class="text-2xl font-semibold">Continuous Learning and Adaptation</h3><br>
-                    <h3 class="font-semibold"> Innovation & Growth:</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Ongoing research to stay ahead of healthcare trends</li>
-                        <li>Investment in new technologies and methodologies</li>
-                        <li>Adaptation to the evolving needs of healthcare</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-    </div>
-
-
-</section>
-
-<!-- Let’s Discuss Next Project section -->
-<section id="contact" class=" hero py-24 px-4 ">
-    <div class="md:mt-4 md:mb-4  lg:w-8/12 mx-auto ">
-        <div class="mt-4 md:mt-16 flex flex-col items-center justify-center  md:w-7/12 mx-auto text-center gap-4">
-            <p class="bg-green-200 rounded-full px-4 py-2 w-64 text-center"><i
-                    class="text-black fa-solid fa-arrow-right "></i> Let’s Connect</p>
-            <h3 class="text-3xl md:text-4xl lg:text-6xl font-bold">Let’s Discuss Next Project</h3>
-            <p>We’re excited to explore new possibilities with you! Let’s discuss how we can combine rustic
-                charm
-                and modern design to create a stunning and unique space tailored to your vision.</p>
-        </div>
-        <div class="mt-20 grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-4 mb-32  ">
-            <input class="px-12 py-3 rounded-full" type="text" placeholder="First Name*">
-            <input class="px-12 py-3 rounded-full" type="text" placeholder="Last Name*">
-            <input class="px-12 py-3 rounded-full" type="text" placeholder="Phone Number*">
-            <input class="px-12 py-3 rounded-full" type="text" placeholder="Email*">
-            <textarea name="" class="md:col-span-2 px-12 py-3 rounded-2xl h-64"
-                placeholder="Write your message here"></textarea>
-
-            <button class="bg-[#ABEF5F80] px-5 py-2 border border-slate-300 rounded-full font-semibold md:col-span-2 ">
-                Send Mail <i
-                    class="ml-4 -rotate-45 bg-[#ABEF5F] p-2 rounded-full text-black fa-solid fa-arrow-right "></i></button>
-        </div>
-    </div>
-</section>
-
-
-<footer class="bg-black py-24 border">
-    <!-- Container -->
-    <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center space-y-8 ">
-
-        <a href="./index.html"><img class="h-14 md:h-40" src="./assets/logo.png" alt=""></a>
-     
-        <div class="text-white">
-            <ul
-                class="menu menu-horizontal px-1  text-lg space-x-4 flex flex-col items-center justify-center lg:flex-row">
-                <li class="hover:font-semibold "><a>Home</a></li>
-                <li class="hover:font-semibold "><a>Services</a></li>
-                <li class="hover:font-semibold "><a>Portfolio</a></li>
-                <li class="hover:font-semibold "><a>Blogs</a></li>
-                <li class="hover:font-semibold "><a>Contact Us</a></li>
-            </ul>
-        </div>
-        <div>
-         
-        </div>
-        
-        <p class="text-slate-50 text-xs">© 2024 Smart Healthcare and Research Ltd. | All rights reserved</p>
-
-        
-        
-    </div>
-
-</footer>
+    </footer>
 </body>
+
 </html>
