@@ -45,24 +45,32 @@
 
 <!-- lg:h-screen -->
 <header class="fixed w-screen z-50 top-0 ">
-    <nav class="shadow-md ">
-        <div class="navbar bg-base-100 md:px-8 md:py-4 ">
+    <nav class="shadow-md">
+        <div class="navbar bg-base-100 md:px-8 md:py-4">
             <div class="navbar-start flex">
-                <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt=""></a>
+                <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt="" /></a>
             </div>
-            <!-- Desktop Menu -->
-            <div class="navbar-center hidden lg:flex  ">
-                <ul class="menu menu-horizontal px-1  text-xl space-x-6">
-                    <li class="hover:font-semibold "><a href="./index.html">Home</a></li>
-                    <li class="hover:font-semibold "><a href="./services.html">Services</a></li>
-                    <li class="hover:font-semibold "><a href="./team.html">Portfolio</a></li>
-                    <li class="hover:font-semibold "><a>Blogs</a></li>
+
+            <!--! Desktop Menu -->
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl space-x-6">
+                    <li class="hover:font-semibold">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="hover:font-semibold">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="hover:font-semibold">
+                        <a href="./team.html">Portfolio</a>
+                    </li>
+                    <li class="hover:font-semibold"><a href="./events.html">Events</a></li>
                 </ul>
             </div>
 
             <div class="navbar-end gap-3 text-lg">
                 <a class="hidden md:block items-center bg-[#ABEF5F] hover:bg-blue-200 px-5 py-2 rounded-3xl font-bold"
-                    href="./contact.html">Book Consult
+                    href="#contact">Book Consult
                     <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -73,16 +81,17 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 ">
-                        <!-- Mobile Menu -->
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+
+                        <!--! Mobile Menu -->
+
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./team.html">Portfolio</a></li>
+                        <li><a href="./events.html">Events</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </nav>
@@ -263,30 +272,41 @@
 
 </body>
 
-<footer class="bg-black py-24 border">
+<footer class="bg-black pt-16 pb-6 border">
     <!-- Container -->
-    <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center space-y-8 ">
+    
+    <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto  space-y-8">
+        <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+           
 
-        <a class="btn btn-ghost text-3xl font-bold text-white"> SHRL</a>
-        <p class="text-white text-center md:w-7/12">Explore our unique designs blending rustic charm with modern
-            sophistication. Contact us for a free consultation or to discuss your next project.
+            <div class="text-white">
+               <ul class="space-y-4 text-center md:text-left">
+                <li class="hover:underline"><a href="./index.html">Home</a></li>
+                <li class="hover:underline"><a href="./services.html">Services</a></li>
+                <li class="hover:underline"><a href="./team.html">Portfolio</a></li>
+                <li class="hover:underline"><a href="">Events</a></li>
+                <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+               </ul>
+            </div>
+            <div><a class="flex justify-center" href="./index.html"><img class="h-24 md:h-40" src="./assets/logo.png" alt="" /></a></div>
+            <div class="text-white space-y-4 ">
+                <h1 class="font-semibold text-xl text-center md:text-left">Stay Connected</h1>
+                <div class="flex">
+                    <p><i class="fa-solid fa-location-dot mr-3"></i></p>
+                    <p> 278 West Monipur, <br> Level-4, 60 Feet Road, <br>Mirpur-2, Dhaka-1216.</p>
+
+                </div>
+                <p></i><i class="fa-solid fa-phone text-white mr-3"></i>+880171185594</p>
+                <p></i><i class="fa-solid fa-envelope text-white mr-3"></i>info@shrl.com.bd</p>
+
+            </div>
+        </div>
+
+
+        <p class="text-slate-50 text-xs text-center">
+            © 2024 Smart Healthcare and Research Ltd. | All rights reserved
         </p>
-        <div class="text-white">
-            <ul
-                class="menu menu-horizontal px-1  text-lg space-x-4 flex flex-col items-center justify-center lg:flex-row">
-                <li class="hover:font-semibold "><a>Home</a></li>
-                <li class="hover:font-semibold "><a>Services</a></li>
-                <li class="hover:font-semibold "><a>Portfolio</a></li>
-                <li class="hover:font-semibold "><a>Blogs</a></li>
-                <li class="hover:font-semibold "><a>Contact Us</a></li>
-            </ul>
-        </div>
-        <a class=" items-center bg-[#ABEF5F] px-5 py-2 rounded-3xl font-bold w-52 ">Book Consult
-            <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
-        <div class="dropdown">
-        </div>
     </div>
-
 </footer>
 
 </html>

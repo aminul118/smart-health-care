@@ -51,7 +51,9 @@
                 <div class="navbar-start flex">
                     <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt="" /></a>
                 </div>
-                <!-- Desktop Menu -->
+
+                <!--! Desktop Menu -->
+
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-xl space-x-6">
                         <li class="hover:font-semibold">
@@ -63,7 +65,7 @@
                         <li class="hover:font-semibold">
                             <a href="./team.html">Portfolio</a>
                         </li>
-                        <li class="hover:font-semibold"><a>Blogs</a></li>
+                        <li class="hover:font-semibold"><a href="./events.html">Events</a></li>
                     </ul>
                 </div>
 
@@ -81,12 +83,14 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-                            <!-- Mobile Menu -->
-                            <li><a>Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>Blogs</a></li>
-                            <li><a>Contact Us</a></li>
+
+                            <!--! Mobile Menu -->
+
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./team.html">Portfolio</a></li>
+                            <li><a href="./events.html">Events</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +101,7 @@
    <!-- ! Our Key Services -->
 
     <!--Container -->
-    <section id="services" class="py-2 md:py-8 lg:py-32 how-we-works">
+    <section id="services" class="py-2 md:py-8 lg:py-32 how-we-works mt-20 md:mt-8 ">
         <div>
             <div class="space-y-2 px-2 flex flex-col items-center justify-center text-center lg:w-7/12 mx-auto">
                 <p class="bg-white rounded-full px-4 py-2 w-48 text-center">
@@ -249,22 +253,36 @@
 
     
 
-    <footer class="bg-black py-24 border">
+    <footer class="bg-black pt-16 pb-6 border">
         <!-- Container -->
-        <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto flex flex-col items-center justify-center space-y-8">
-            <a href="./index.html"><img class="h-14 md:h-40" src="./assets/logo.png" alt="" /></a>
+        
+        <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto  space-y-8">
+            <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+               
 
-            <div class="text-white">
-                <ul
-                    class="menu menu-horizontal px-1 text-lg space-x-4 flex flex-col items-center justify-center lg:flex-row">
-                    <li class="hover:font-semibold"><a>Home</a></li>
-                    <li class="hover:font-semibold"><a>Services</a></li>
-                    <li class="hover:font-semibold"><a>Portfolio</a></li>
-                    <li class="hover:font-semibold"><a>Blogs</a></li>
-                    <li class="hover:font-semibold"><a>Contact Us</a></li>
-                </ul>
+                <div class="text-white">
+                   <ul class="space-y-4 text-center md:text-left">
+                    <li class="hover:underline"><a href="./index.html">Home</a></li>
+                    <li class="hover:underline"><a href="./services.html">Services</a></li>
+                    <li class="hover:underline"><a href="./team.html">Portfolio</a></li>
+                    <li class="hover:underline"><a href="">Events</a></li>
+                    <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+                   </ul>
+                </div>
+                <div><a class="flex justify-center" href="./index.html"><img class="h-24 md:h-40" src="./assets/logo.png" alt="" /></a></div>
+                <div class="text-white space-y-4 ">
+                    <h1 class="font-semibold text-xl text-center md:text-left">Stay Connected</h1>
+                    <div class="flex">
+                        <p><i class="fa-solid fa-location-dot mr-3"></i></p>
+                        <p> 278 West Monipur, <br> Level-4, 60 Feet Road, <br>Mirpur-2, Dhaka-1216.</p>
+
+                    </div>
+                    <p></i><i class="fa-solid fa-phone text-white mr-3"></i>+880171185594</p>
+                    <p></i><i class="fa-solid fa-envelope text-white mr-3"></i>info@shrl.com.bd</p>
+
+                </div>
             </div>
-            <div></div>
+
 
             <p class="text-slate-50 text-xs text-center">
                 © 2024 Smart Healthcare and Research Ltd. | All rights reserved
