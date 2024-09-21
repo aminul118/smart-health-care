@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Aminul Islam</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b9757d8d64.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Manrope Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .how-we-works {
+            background-image: url(./assets/portrait-from.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="manrope bg-slate-50  ">
+    <!-- lg:h-screen -->
+    <header class="fixed w-screen z-50 top-0">
+        <nav class="shadow-md">
+            <div class="navbar bg-base-100 md:px-8 md:py-4">
+                <div class="navbar-start flex">
+                    <a href="./index.html"><img class="h-14 md:h-24" src="./assets/logo.png" alt="" /></a>
+                </div>
+
+                <!--! Desktop Menu -->
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl space-x-6">
+                        <li class="hover:font-semibold">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="hover:font-semibold">
+                            <a href="./services.html">Services</a>
+                        </li>
+                        <li class="hover:font-semibold">
+                            <a href="./team.html">Portfolio</a>
+                        </li>
+                        <li class="hover:font-semibold"><a href="./events.html">Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end gap-3 text-lg">
+                    <a class="hidden md:block items-center bg-[#ABEF5F] hover:bg-blue-200 px-5 py-2 rounded-3xl font-bold"
+                        href="./contact.html">Book Consult
+                        <i class="ml-2 -rotate-45 bg-black p-2 rounded-full text-white fa-solid fa-arrow-right"></i></a>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+
+                            <!--! Mobile Menu -->
+
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./team.html">Portfolio</a></li>
+                            <li><a href="./events.html">Events</a></li>
+                            <li><a href="./contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mx-auto py-24">
+            <!--! Photo Name and details start -->
+            <img class="rounded-full border-2 shadow-lg w-56 mx-auto md:mt-20" src="./assets/aminul.png" alt="" class="border-2 border-black mx-auto mt-10">
+            <div class="mt-8 space-y-4 px-4 md:px-2 lg:px-0 text-center mx-auto ">
+                <h1 class="text-xl font-bold">Md. Aminul Islam</h1>
+                <p class="md:font-semibold">
+                    Email: mr.aminul118@gmail.com <br>
+                    Phone: +8801781082064 <br>
+                    Mirpur-10, Dhaka-1216 <br>
+                <div class="mt-4">
+                    <a href="https://github.com/aminul118"><i class="fa-brands fa-github text-4xl"></i></a>
+                    <a href="https://www.linkedin.com/in/aminul118/"><i
+                            class="fa-brands fa-linkedin-in text-4xl ml-3"></i></a>
+
+                </div>
+                </p>
+            </div>
+            <!--! Photo Name and details End -->
+
+            <!--! Skills And Recent Project-->
+            <div
+                class="md:border shadow-2xl shadow-slate-600 rounded-lg px-8 md:p-12 mt-12 md:mt-4 mx-auto lg:w-9/12 bg-white pb-10">
+                <div>
+                    <!-- Grid Container -->
+                    <div class="grid md:grid-cols-2">
+                        <!--? Left side Skills -->
+                        <div class="md:border-r-2 border-dashed">
+                            <h1 class="mb-6 mt-10 md:text-2xl font-semibold ">Skills</h1>
+                            <ul class=" space-y-6  md:text-justify ">
+                                <li class="list-inside list-disc px-1"> HTML, CSS, Tailwind CSS </li>
+                                <li class="list-inside list-disc px-1"> Git & GitHub </li>
+                                <li class="list-inside list-disc px-1">Dev Tool </li>
+                                <li class="list-inside list-disc px-1">JavaScript, DOM manipulation, Library </li>
+                                <li class="list-inside list-disc px-1"> API, ES6 </li>
+                                <li class="list-inside list-disc px-1">React JS, React router, Next.js </li>
+                                <li class="list-inside list-disc px-1">Firebase, Authentication </li>
+                                <li class="list-inside list-disc px-1">Node JS, Express JS </li>
+                                <li class="list-inside list-disc px-1">MongoDB Database </li>
+                                <li class="list-inside list-disc px-1">WordPress </li>
+                                <li class="list-inside list-disc px-1">UI/UX design </li>
+                                <li class="list-inside list-disc px-1">Photoshop, Premiere Pro, Audition </li>
+                                <li class="list-inside list-disc px-1">Illustrator, Canva </li>
+                                <li class="list-inside list-disc px-1">Facebook Page boosting </li>
+                                <li class="list-inside list-disc px-1">Microsoft Office </li>
+                            </ul>
+                        </div>
+                        <!--? Right Side Recent Project-->
+                        <div>
+                            <div class="lg:pl-10">
+                                <h1 class="mb-6 mt-10 md:text-2xl font-semibold  ">Recent Project</h1>
+                                <ul class=" space-y-6  md:text-justify ">
+                                    <li class="list-disc list-inside   px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/rinterio/">Rinterio</a>
+                                        - A Barn House
+                                        Architecture static website.
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/tea-house/">Tea House</a>
+                                        - Fruit and Juice preview single page.
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/fitness-gym/">Fitness</a>
+                                        - Gym Website.
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/biker-zone/">Biker Zone</a>
+                                        - Bike Show static site with carousel and faq.
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/eat-healthy/">Eat Healthy</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/hockey/">Hockey</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/penguin-fashion/">Penguin Fashion</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/penguin-fashion/">Penguin Fashion</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/gamer-zone/">Gamer Zone</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/legal-solution/">Legal Solution</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/developer-portfolio/">Portfolio Design</a>
+
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/batch10-assignment1/">Developer Site </a>
+                                        - Simple Site design.
+                                    </li>
+                                    <li class="list-disc list-inside  px-1"> <a
+                                            class="underline text-blue-600 font-semibold "
+                                            href="https://aminul118.github.io/batch9-a1-solution/">New Year Celebration
+                                        </a>
+
+                                    </li>
+
+
+
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- !Research work / Publications End -->
+        </section>
+    </main>
+    <!--! Footer Section Starts -->
+    <footer class="bg-black pt-16 pb-6 border">
+        <!-- Container -->
+        <div class="px-4 md:w-11/12 lg:w-8/12 mx-auto  space-y-8">
+            <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+                <div class="text-white">
+                    <ul class="space-y-4 text-center md:text-left">
+                        <li class="hover:underline"><a href="./index.html">Home</a></li>
+                        <li class="hover:underline"><a href="./services.html">Services</a></li>
+                        <li class="hover:underline"><a href="./team.html">Portfolio</a></li>
+                        <li class="hover:underline"><a href="">Events</a></li>
+                        <li class="hover:underline"><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div><a class="flex justify-center" href="./index.html"><img class="h-24 md:h-40"
+                            src="./assets/logo.png" alt="" /></a></div>
+                <div class="text-white space-y-4 ">
+                    <h1 class="font-semibold text-xl text-center md:text-left">Stay Connected</h1>
+                    <div class="flex">
+                        <p><i class="fa-solid fa-location-dot mr-3"></i></p>
+                        <p> 278 West Monipur, <br> Level-4, 60 Feet Road, <br>Mirpur-2, Dhaka-1216.</p>
+                    </div>
+                    <p></i><i class="fa-solid fa-phone text-white mr-3"></i>+880171185594</p>
+                    <p></i><i class="fa-solid fa-envelope text-white mr-3"></i>info@shrl.com.bd</p>
+                </div>
+            </div>
+            <p class="text-slate-50 text-xs text-center">
+                © 2024 Smart Healthcare and Research Ltd. | All rights reserved
+            </p>
+        </div>
+    </footer>
+    <!--! Footer Section End -->
+</body>
+
+</html>
