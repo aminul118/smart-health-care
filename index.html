@@ -17,6 +17,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
+
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "c5Afq-Knqv9G3qAme",
+});
+})();
+</script>
+
+
     <!--! Raw CSS -->
     <style>
         .manrope {
@@ -556,20 +570,22 @@
                     back to you shortly.
                 </p>
             </div>
-            <div class="mt-20 grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-4 mb-32">
-                <input class="px-12 py-3 rounded-full" type="text" placeholder="First Name*" />
-                <input class="px-12 py-3 rounded-full" type="text" placeholder="Last Name*" />
-                <input class="px-12 py-3 rounded-full" type="text" placeholder="Phone Number*" />
-                <input class="px-12 py-3 rounded-full" type="text" placeholder="Email*" />
-                <textarea name="" class="md:col-span-2 px-12 py-3 rounded-2xl h-64"
+            <form id="contact-form" class="mt-20 grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-4 mb-32">
+                <input name="first_name" class="px-12 py-3 rounded-full" type="text" placeholder="First Name*" />
+                <input name="last_name" class="px-12 py-3 rounded-full" type="text" placeholder="Last Name*" />
+                <input name="phone" class="px-12 py-3 rounded-full" type="text" placeholder="Phone Number*" />
+                <input name="email" class="px-12 py-3 rounded-full" type="text" placeholder="Email*" />
+                <textarea name="message" class="md:col-span-2 px-12 py-3 rounded-2xl h-64"
                     placeholder="Write your message here"></textarea>
+                    <p class=" md:col-span-2  text-red-500 font-bold w-full text-center mx-auto my-1 " id="statusFail"> </p>
+                    <p class=" md:col-span-2  text-green-500 font-bold w-full text-center mx-auto my-1 " id="statusSuccess"> </p>
 
-                <button
+                <button type="submit"
                     class="bg-[#ABEF5F80] px-5 py-2 border border-slate-300 rounded-full font-semibold md:col-span-2">
                     Send Mail
                     <i class="ml-4 -rotate-45 bg-[#ABEF5F] p-2 rounded-full text-black fa-solid fa-arrow-right"></i>
                 </button>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -610,6 +626,9 @@
             </p>
         </div>
     </footer>
+
+
+    <script src="./js/emalsending.js"></script>
 </body>
 
 </html>
