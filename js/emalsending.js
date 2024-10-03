@@ -17,7 +17,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
 
         try {
-            emailjs.sendForm('service_f1e1fxp', 'template_i98uw2x', this)
+            emailjs.sendForm('service_p5kh1pz', 'template_xuuycsf', this) 
                 .then(function(response) {
                     console.log('res', response);
                     console.log('SUCCESS!', response.status, response.text);
