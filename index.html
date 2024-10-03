@@ -19,16 +19,15 @@
 
 
 
-<script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init({
-publicKey: "BZByS6Z5lLL0E1OfW", 
-});
-})();
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "BZByS6Z5lLL0E1OfW",
+            });
+        })();
+    </script>
 
 
     <!--! Raw CSS -->
@@ -173,7 +172,7 @@ publicKey: "BZByS6Z5lLL0E1OfW",
         <div
             class="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-8 lg:mt-24 lg:container mx-auto">
             <!--! Online Consultation Platform -->
-            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3 ">
+            <div class="bg-gradient-to-b from-cyan-50 to-blue-400 rounded-xl p-8 space-y-3 shadow-xl">
                 <img class="w-12" src="./assets/doctor-patient.png" alt="" />
                 <h3 class="text-xl font-semibold">Online Consultation Platform</h3>
                 <p>
@@ -194,7 +193,7 @@ publicKey: "BZByS6Z5lLL0E1OfW",
                 </ul>
             </div>
             <!--! Research and Analysis-->
-            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+            <div class="bg-gradient-to-b from-cyan-50 to-blue-400 rounded-xl p-8 space-y-3 shadow-xl">
                 <img class="w-12" src="./assets/medical-research.png" alt="" />
                 <h3 class="text-xl font-semibold">Research and Analysis</h3>
                 <p>
@@ -215,7 +214,7 @@ publicKey: "BZByS6Z5lLL0E1OfW",
                 </ul>
             </div>
             <!-- ! Training Programs for Healthcare Professionals -->
-            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+            <div class="bg-gradient-to-b from-cyan-50 to-blue-400 rounded-xl p-8 space-y-3 shadow-xl">
                 <img class="w-12" src="./assets/training-program.png" alt="" />
                 <h3 class="text-xl font-semibold">
                     Training Programs for Healthcare Professionals
@@ -236,7 +235,7 @@ publicKey: "BZByS6Z5lLL0E1OfW",
                 </ul>
             </div>
             <!--! Patient empowerment-->
-            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+            <div class="bg-gradient-to-b from-cyan-50 to-blue-400 rounded-xl p-8 space-y-3 shadow-xl">
                 <img class="w-12" src="./assets/patient-education.png" alt="" />
                 <h3 class="text-xl font-semibold">Patient empowerment</h3>
                 <p>
@@ -256,7 +255,7 @@ publicKey: "BZByS6Z5lLL0E1OfW",
                 </ul>
             </div>
             <!--! Community Outreach -->
-            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+            <div class="bg-gradient-to-b from-cyan-50 to-blue-400 rounded-xl p-8 space-y-3 shadow-xl">
                 <img class="w-12" src="./assets/community.png" alt="" />
                 <h3 class="text-xl font-semibold">Community Outreach</h3>
                 <p>
@@ -274,7 +273,7 @@ publicKey: "BZByS6Z5lLL0E1OfW",
                 </ul>
             </div>
             <!--!  Research Publications and Academic Collaboration -->
-            <div class="bg-[#E7C1D3] hover:bg-slate-100 rounded-xl p-8 space-y-3">
+            <div class="bg-gradient-to-b from-cyan-50 to-blue-400 rounded-xl p-8 space-y-3 shadow-xl">
                 <i class="fa-brands fa-researchgate text-5xl text-black"></i><br />
                 <h3 class="text-xl font-semibold">
                     Research Publications and Academic Collaboration
@@ -570,20 +569,22 @@ publicKey: "BZByS6Z5lLL0E1OfW",
                     back to you shortly.
                 </p>
             </div>
-            <form id="contact-form" class="mt-20 grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-4 mb-32">
+            <form id="contact-form"
+                class="mt-20 grid items-center justify-center grid-cols-1 md:grid-cols-2 gap-4 mb-32">
                 <input name="first_name" class="px-12 py-3 rounded-full" type="text" placeholder="First Name*" />
                 <input name="last_name" class="px-12 py-3 rounded-full" type="text" placeholder="Last Name*" />
                 <input name="phone" class="px-12 py-3 rounded-full" type="text" placeholder="Phone Number*" />
                 <input name="email" class="px-12 py-3 rounded-full" type="text" placeholder="Email*" />
                 <textarea name="message" class="md:col-span-2 px-12 py-3 rounded-2xl h-64"
                     placeholder="Write your message here"></textarea>
-                    <p class=" md:col-span-2  text-red-500 font-bold w-full text-center mx-auto my-1 " id="statusFail"> </p>
-                    <p class=" md:col-span-2  text-green-500 font-bold w-full text-center mx-auto my-1 " id="statusSuccess"> </p>
+                <p class=" md:col-span-2  text-red-500 font-bold w-full text-center mx-auto my-1 " id="statusFail"> </p>
+                <p class=" md:col-span-2  text-green-500 font-bold w-full text-center mx-auto my-1 " id="statusSuccess">
+                </p>
 
                 <button type="submit"
-                    class="bg-[#ABEF5F80] px-5 py-2 border border-slate-300 rounded-full font-semibold md:col-span-2">
+                    class="bg-gradient-to-l from-cyan-100 to-blue-400 hover:bg-gradient-to-r px-5 py-2 border border-slate-300 rounded-full font-semibold md:col-span-2">
                     Send Mail
-                    <i class="ml-4 -rotate-45 bg-[#ABEF5F] p-2 rounded-full text-black fa-solid fa-arrow-right"></i>
+                    <i class="ml-4 -rotate-45  p-2 rounded-full text-black fa-solid fa-arrow-right"></i>
                 </button>
             </form>
         </div>
