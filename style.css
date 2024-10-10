@@ -1,0 +1,21 @@
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.hero {
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-we-works {
+  background-image: url(./assets/bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio {
+  background-image: url(./assets/works-section.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
