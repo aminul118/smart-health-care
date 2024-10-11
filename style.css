@@ -35,6 +35,8 @@
 
 .portfolio {
   background-image: url(./assets/works-section.jpg);
+  background-blend-mode: overlay;
+  background-color: rgba(209, 198, 198, 0.374);
   background-repeat: no-repeat;
   background-position: center;
 }
