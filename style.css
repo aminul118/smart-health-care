@@ -20,6 +20,7 @@
     url(./assets/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .how-we-works {
@@ -31,6 +32,7 @@
     url(./assets/bg2.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .portfolio {
@@ -39,4 +41,5 @@
   background-color: rgba(209, 198, 198, 0.374);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
